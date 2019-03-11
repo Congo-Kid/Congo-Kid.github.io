@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-us"></html>
 
@@ -171,4 +172,179 @@
 
      
      
+=======
+<!DOCTYPE html>
+<html lang="en-us"></html>
+
+<!-- Set up the head and title -->
+<head>
+    <meta charset="UTF-8">
+    <title>Latitude: Analysis Dashboard with Attitude</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+     <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <h1>Summary: Latitude vs. X</h1> -->
+                    <a class="navbar-brand" href="index.html">Summary: Latitude vs. Other Factors</a>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="temp.html">Temperature</a>
+                                </li>
+                                <li>
+                                    <a href="humid.html">Humidity</a>
+                                </li>
+                                <li>
+                                    <a href="cloud.html">Cloudiness</a>
+                                </li>
+                                <li>
+                                    <a href="wind.html">Wind Speed</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="comparison.html">Comparison</a>
+                        </li>
+                        <li>
+                            <a href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+
+     <!-- immage of author -->
+     <img width="50" src="file:///D:\Pics\Headshot.png" alt="Author">
+     <br>
+     <p>Author</p>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="sigline">
+                        <p>
+                            E. David Bokamba | University of MN Data Analytics & Visualization Boot Camp |
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+                <div class="row row-grid">
+                    <div class="col-md-8">
+                        <div class="box box-left">
+                            <section id="intro">
+                                <h1>Summary</h1>
+                                <hr>
+                                <figure>
+                                    <a target="_blank" href="Images/Lat_v_Temp.png">
+                                    <img width="100" id="viz-main" src="Images/Lat_v_Temp.png" alt="Latitude of cities">   
+                                    </a>
+                                </figure>
+        
+                                <section id="summary">
+                                    <p>The purpose of this project was to analyze how weather changes as you get closer to the 
+                                        equator. To accomplish this analysis the OpenWeatherMap API was employed to gather data
+                                        from over 500 Cities. 
+                                
+                                    </p>
+        
+                                    <p> After assembling the dataset, Matplotlib was used to plot the various aspects of weather
+                                        as they related to latitude. In particular the relationship between latitude and temperature,
+                                        cloudiness, wind speed, and humidty was examined. This site contains the visualizations that
+                                        were created as part of the analysis. The plots created were as follows:
+                                    </p>
+        
+                            
+                                    <ul>
+                                        <li>Temperature (F) vs. Latitude</li>
+                                        <li>Humidity (%) vs. Latitude</li>
+                                        <li>Cloudiness (%) vs. Latitude</li>
+                                        <li>Wind Speed (mph) vs. Latitude</li>
+        
+                                    </ul>
+        
+                                </section>
+        
+                            </section>
+                        </div>
+                    </div>
+        
+        
+                    <div class="col-md-4">
+                        <div class="box box-right">
+                            <h2>Visualizations</h2>
+                            <hr>
+        
+        
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3 col-md-6">
+                                    <figure>
+                                        <a href="temp.html">
+                                            <img width="200" id="landing-viz" src="Images/Lat_v_Temp.png" alt="Latitude vs. Temperature">
+                                        </a>
+                                    </figure>
+                                </div>
+        
+                                <div class="col-xs-6 col-sm-3 col-md-6">
+                                    <figure>
+                                        <a href="humid.html">
+                                            <img width="200" id="landing-viz" src="Images/Lat_v_Humidity.png" alt="Latitude vs. Humidity">
+                                        </a>
+                                    </figure>
+                                </div>
+        
+                                <div class="col-xs-6 col-sm-3 col-md-6">
+                                    <figure>
+                                        <a href="cloud.html">
+                                            <img width="200" id="landing-viz" src="Images/Lat_v_Cloudiness.png" alt="Latitude vs. Cloudiness">
+                                        </a>
+                                    </figure>
+                                </div>
+        
+                                <div class="col-xs-6 col-sm-3 col-md-6">
+                                    <figure>
+                                        <a href="wind.html">
+                                            <img width="200" id="landing-viz" src="Images/Lat_v_WindSpeed.png" alt="Latitude vs. Wind Speed">
+                                        </a>
+                                    </figure>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>                       
+    
+
+
+     
+     
+>>>>>>> f00d0df2fd6c00d82dc5d7b823937c65bd381bba
 </body>

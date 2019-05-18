@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Happy Mother's Day</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+        <!-- Side navbar set up moved to css file -->
+
+
+    </head>
+<body>
+
+    <!-- html for side navigation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Navbar links -->
+        <a href="index.html">Home</a>
+        <a href="taty.html">Taty's Message</a>
+        <a href="moke.html">Moke's & Meri's Message</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <span style="color:white;font-size:25px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+}
+    </script>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+        <div class="hero">
+            <style>
+                .hero {
+                    content: "";
+                    background: url(../static/images/blossoms.jpg);
+                    background-size: cover;
+                    opacity: 1.5;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    position: absolute;
+                    z-index: -1;  
+                    background-repeat: no-repeat; 
+                  }
+            </style>
+            <div class="container-fluid text-center">    
+                <div class="row content">
+                  <div class="col-xs-12 text-center">
+                      
+                        <div class="hero text-center">
+                        <h2>Happy Mother's Day, Mama/Grandma B!</h2>
+                        <br>
+                        
+                        <img width="180px" align="auto" src="../static/images/mama_et_moke.JPG" alt="Moke & Mama">
+                        <img width="180px" align="auto" src="../static/images/mamaroses.jpeg" alt="Moke & Mama">
+                        <img width="175px" align="auto" src="../static/images/20190407_232403.jpg" alt="Taty & Grandma B">
+                        
+                        <p style="font-size:18px"><b>"On Mother's Day we take time to reflect on what a blessing
+                            it is to have a mother. Mother's are our first caretakers, our first teachers, our first friends.
+                            Mama, today we give thanks to God for choosing you to play this most pivotal role."</b></p>
+                        
+                           <P><b>-With love from your family.</b></p>
+</body>
+
+</html>
